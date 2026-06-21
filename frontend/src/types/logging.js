@@ -1,0 +1,1 @@
+export const DEFAULT_MAX_BUFFER_LINES = 2500;

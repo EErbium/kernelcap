@@ -1,0 +1,43 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.out
+*.test
+*.test.exe
+profiler-agent
+agent
+
+# Go
+vendor/
+*.mod
+*.sum
+go.work
+
+# Test binary
+*.test
+
+# Output of go coverage
+*.out
+*.cov
+coverage.txt
+coverage.html
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
