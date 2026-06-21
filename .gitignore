@@ -1,4 +1,14 @@
-# Binaries
+# ─────────────────────────────────────────────────────────────
+# AegisFlow Open-Core Git Quarantine Guard
+# ─────────────────────────────────────────────────────────────
+
+# Block Enterprise Modules (Commercial IP Guard)
+/ee/
+ee/
+
+# Compiled Binaries & Core Dumps
+/bin/
+__debug_bin
 *.exe
 *.exe~
 *.dll
@@ -7,25 +17,35 @@
 *.out
 *.test
 *.test.exe
-profiler-agent
-agent
 
-# Go
+# Go Build Artifacts
 vendor/
-*.mod
-*.sum
 go.work
 
-# Test binary
-*.test
-
-# Output of go coverage
-*.out
+# Coverage & Test Output
 *.cov
 coverage.txt
 coverage.html
 
-# IDE
+# OS & Environment Configuration Leaks
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+*.crt
+
+# Local Testing Infrastructure Trash
+/data/
+/data/influxdb/
+/data/postgres/
+*.log
+*.pid
+*.socket
+*.sock
+
+# IDE & Editor Detritus
 .idea/
 .vscode/
 *.swp
@@ -33,11 +53,3 @@ coverage.html
 *~
 .DS_Store
 Thumbs.db
-
-# Environment
-.env
-.env.local
-.env.*.local
-
-# Logs
-*.log
